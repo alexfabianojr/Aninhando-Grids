@@ -1,0 +1,45 @@
+html, body {
+    padding: 10%;
+    background:skyblue;
+}
+
+.container {
+    padding: 5px;;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+    grid-template-areas: "nested nested nested"
+                "um dois tres"
+                "quatro cinco seis";
+    border: 5px solid tomato;
+    background: lightsalmon;
+}
+
+.box {
+    padding: 5px;
+    height: 20vh;
+    border: 2px solid tomato;
+    border-radius: 10px;
+}
+
+.nestedContainer {
+    grid-area: nested;
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+
+.nestedBox {
+    padding: 5px;
+    height: 3vh;
+    background: khaki;
+    border: 2px solid tomato;
+    border-radius: 10px;
+}
+
+.box1 { grid-area: um; }
+.box2 { grid-area: dois; }
+.box3 { grid-area: tres; }
+.box4 { grid-area: quatro; }
+.box5 { grid-area: cinco; }
+.box6 { grid-area: seis; }
